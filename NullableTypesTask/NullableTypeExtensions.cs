@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 
 namespace NullableTypesTask
 {
@@ -12,7 +12,12 @@ namespace NullableTypesTask
         /// <returns>true if variable is null, false otherwise</returns>
         public static bool IsNull(this object variable)
         {
-            throw new NotImplementedException("You need to implement this method.");
+            if (variable is null)
+            {
+                return true;
+            }
+
+            return false;
         }
     }
 }
